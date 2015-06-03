@@ -7,7 +7,9 @@ Enable ipv4 forward
 --------------------------------------------------
  
  `vi /etc/sysctl.conf`
+ 
  Change value `net.ipv4.ip_forward` to 1
+ 
  `net.ipv4.ip_forward = 1`
  
 Change iptables service

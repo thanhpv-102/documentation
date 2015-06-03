@@ -40,4 +40,14 @@ Change iptables service
 Firewall port 80 in virtual machine if needed
 ------------------------------------------------------
 
-Best regards,
+
+Change setting for folder shared VM
+===================================================
+
+Change port ssl vmware workstation server: 
+
+`vi /etc/vmware/hostd/proxy.xml`
+
+Change folder default `standard`
+
+`vi /etc/vmware/hostd/datastores.xml`

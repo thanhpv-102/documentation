@@ -37,8 +37,7 @@ Change iptables service
  
   `service iptables restart`
  
-Firewall port 80 in virtual machine if needed
-------------------------------------------------------
+### Firewall port 80 in virtual machine if needed
 
 
 Change setting for folder shared VM

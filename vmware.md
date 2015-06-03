@@ -3,13 +3,15 @@ Forward port to VMware machine using iptables
 
 Operating system: Centos 6.6
 
-1. Enable ipv4 forward
+Enable ipv4 forward
+--------------------------------------------------
  
  `vi /etc/sysctl.conf`
  Change value `net.ipv4.ip_forward` to 1
  `net.ipv4.ip_forward = 1`
  
- 2. Change iptables service
+Change iptables service
+---------------------------------------------------
  
  `vi /etc/sysconfig/iptables`
  
@@ -28,4 +30,7 @@ Operating system: Centos 6.6
  Restart iptables services
   `service iptables restart`
  
- 3. Firewall port 80 in virtual machine if needed
+Firewall port 80 in virtual machine if needed
+------------------------------------------------------
+
+Best regards,

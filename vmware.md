@@ -39,6 +39,26 @@ Change iptables service
  
 ### Firewall port 80 in virtual machine if needed
 
+### Can't use this setting for PostgreSQL, if you want to forward port for PostgreSQL, you should use vmware nat config
+
+
+Forward port to VMware machine using vmware nat config
+================================================
+
+Step 1: Turn off or suspend all the virtual machine
+
+Step 2: Edit nat network config
+
+`vi /etc/vmware/vmnet8/nat/nat.conf`
+
+Add this information to `[tcp]` and `[udp]`: forward port 5432 to port 5432 on 172.16.81.100
+
+`5432 = 172.16.81.100:5432`
+
+Step 3: Restart vmware service (require turn off all the virtual machine)
+
+`service vmware restart`
+
 
 Change setting for folder shared VM
 ===================================================

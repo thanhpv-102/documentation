@@ -9,3 +9,4 @@ Include all settings software from my experience
 * [Config to run Yii2 application in Centos 7](https://github.com/thanhpv-h9/documentation/blob/master/install-yii2-centos7.md)
 * [Docker](https://github.com/thanhpv-h9/documentation/blob/master/Docker.md)
 * [Linux](https://github.com/thanhpv-102/documentation/blob/master/linux.md)
+* [Travis](https://github.com/thanhpv-102/documentation/blob/master/Travis.md)

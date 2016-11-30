@@ -37,9 +37,9 @@ sudo make install
 ### 2. Script for auto unlock
 
 ```sh
-echo (unlock password) | sudo -S dislocker -r -V /dev/sdb1 -u -- /media/bitlocker
-echo (root password) | sudo -S -i
-cd /media/bitlocker/
-mount -o loop dislocker-file /media/mount
+#!/bin/bash
+
+sudo dislocker -r -V /dev/sda4 -u -- /media/bitlocker
+sudo mount -o loop /media/bitlocker/dislocker-file /media/mount
 ```
 [http://askubuntu.com/questions/727977/how-to-automate-dislocker-process](http://askubuntu.com/questions/727977/how-to-automate-dislocker-process)

@@ -11,3 +11,10 @@ if [ -d "$HOME/other/bin" ] ; then
   PATH="$PATH:$HOME/other/bin"
 fi
 ```
+
+Find big size file in path
+-------------------
+
+```
+find /<path> -printf '%s %p\n'| sort -nr | head -10
+```

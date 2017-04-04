@@ -22,3 +22,10 @@ Setup couchbase admin in web view a large document ( > 2.5KB )
 
 // Change 2500 to new size
 ```
+
+Rebuild index after restore data
+----------------
+
+```
+BUILD INDEX ON <bucket-name> (<index-name1>, <index-name2>, `<bucket-name>-primary-index`)
+```

@@ -1,3 +1,8 @@
+##### Install docker
+```
+curl -sL https://get.docker.com/ | sudo -E bash -
+```
+
 ##### Remove none:none image
 
 ```
